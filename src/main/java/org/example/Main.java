@@ -13,25 +13,25 @@ public class Main {
 
             switch (option){
                 case 1:
-                    //TODO
+                    //TODO insercion
                     break;
                 case 2:
-                    //TODO
+                    //TODO list all
                     break;
                 case 3:
-                    //TODO
+                    //TODO list prestados
                     break;
                 case 4:
-                    //TODO
+                    //TODO list disponibles
                     break;
                 case 5:
-                    //TODO
+                    //TODO prestar
                     break;
                 case 6:
-                    //TODO
+                    //TODO ver detalle
                     break;
                 case 7:
-                    //TODO
+                    //TODO salir
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida");
