@@ -8,8 +8,9 @@ public class Periodico {
     private String estiloPapel;
     private String genero;
     private Integer numeroHojas;
+    private boolean estado;
 
-    public Periodico(String identificacion, String titulo, String autor, String anio, String estiloPapel, String genero, Integer numeroHojas) {
+    public Periodico(String identificacion, String titulo, String autor, String anio, String estiloPapel, String genero, Integer numeroHojas, boolean estado) {
         this.identificacion = identificacion;
         this.titulo = titulo;
         this.autor = autor;
@@ -73,5 +74,13 @@ public class Periodico {
 
     public void setNumeroHojas(Integer numeroHojas) {
         this.numeroHojas = numeroHojas;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }
