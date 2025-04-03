@@ -3,6 +3,7 @@ package org.example;
 import org.example.model.LibroConvencional;
 
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class agregarLibros {
@@ -24,7 +25,32 @@ public class agregarLibros {
         }
     }
 
+    private void generarIdentificacion(int tipo){
+        String prefix = "";
+
+        switch(tipo){
+
+            case 1:
+                // ID para LC
+               prefix = "LC";
+                break;
+            case 2:
+                //ID para manga
+                prefix = "MG";
+                break;
+            case 3:
+                //ID para periodico
+                prefix = "PR";
+                break;
+
+        }
+
+
+    }
+
     private void agregarLC(){
+
+
         System.out.println("Ingrese el nombre del libro");
         Scanner scNombre = new Scanner(System.in);
         String nombreLC = scNombre.nextLine();
@@ -41,10 +67,7 @@ public class agregarLibros {
         Scanner scGenero = new Scanner(System.in);
         String generoLC = scGenero.nextLine();
 
-        LibroConvencional lc = new LibroConvencional("hi", nombreLC, autorLC, anioLC, generoLC,true);
-
-
-
+        LibroConvencional lc = new LibroConvencional("hi", nombreLC, autorLC, anioLC, generoLC,false);
 
     }
 
